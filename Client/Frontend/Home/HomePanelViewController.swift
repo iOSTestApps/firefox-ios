@@ -103,6 +103,10 @@ class HomePanelViewController: UIViewController, UITextFieldDelegate, HomePanelD
         view.window?.rootViewController?.view.endEditing(true)
     }
 
+    deinit {
+        println("ASF")
+    }
+
     var selectedButtonIndex: Int? = nil {
         didSet {
             if oldValue == selectedButtonIndex {
